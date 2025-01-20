@@ -1,0 +1,141 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with a white background */
+body {
+    font-family: 'Arial', sans-serif; /* More neutral font like LinkedIn */
+    color: #333; /* Dark gray text color */
+    line-height: 1.4; /* Reduced line height for a more compact layout */
+    padding: 0;
+    margin: 0;
+    background-color: #fff; /* White background for the page */
+}
+
+/* Add background image directly to a container div */
+.background-container {
+    background-image: url('https://cdn.pixabay.com/photo/2024/01/25/00/25/robot-8530783_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensures background stays behind the content */
+}
+
+/* Main content container */
+.container {
+    width: 75%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.95); /* Light, subtle white background */
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    font-size: 2rem; /* Smaller font size for a more professional look */
+    color: #0077b5; /* LinkedIn blue */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem; /* Smaller font size */
+    color: #333; /* Dark gray text */
+    border-bottom: 2px solid #0077b5; /* LinkedIn blue underline */
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.3rem; /* Slightly smaller for subheadings */
+    color: #333;
+    margin-top: 15px;
+    border-bottom: 2px solid #0077b5;
+    padding-bottom: 8px;
+}
+
+/* Paragraph */
+p {
+    font-size: 0.9rem; /* Smaller font size */
+    color: #555; /* Lighter gray text */
+    margin-bottom: 15px;
+}
+
+/* Image Styling */
+.profile-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+}
+
+/* Images container */
+.images-container {
+    padding: 15px;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white */
+    border-radius: 8px;
+}
+
+/* Link Styles */
+a {
+    color: #0077b5; /* LinkedIn blue */
+    text-decoration: none;
+    font-weight: normal;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #005e8c; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Adjusted for smaller screens */
+    }
+
+    h2, h3 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.85rem; /* Smaller text on mobile */
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    form {
+        padding: 10px;
+    }
+}
+
+
+.my_image {
+    text-align: center; /* Centers the image horizontally */
+    margin: 20px 0; /* Optional margin for spacing around the image */
+}
+
+.my_image img {
+    max-width: 100%; /* Ensures the image doesn't overflow its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+}

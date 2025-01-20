@@ -1,0 +1,94 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with a white background */
+body {
+    font-family: 'Arial', sans-serif; /* Simple, professional font */
+    color: #333; /* Dark gray text for clarity */
+    line-height: 1.4; /* Readable, compact line height */
+    padding: 0;
+    margin: 0;
+    background-color: #fff; /* White background for simplicity */
+}
+
+/* Main content container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Solid white background for content */
+    position: relative;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    font-size: 1.8rem; /* Smaller, professional header size */
+    color: #0077b5; /* LinkedIn blue for a professional feel */
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.3rem; /* Smaller subheading */
+    color: #333; /* Dark gray for contrast */
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.1rem; /* Even smaller subheading */
+    color: #333;
+    margin-top: 15px;
+}
+
+/* Paragraph */
+p {
+    font-size: 0.9rem; /* Standard font size */
+    color: #555; /* Slightly lighter gray text */
+    margin-bottom: 15px;
+}
+
+/* Image Styling */
+.profile-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+}
+
+/* Link Styles */
+a {
+    color: #0077b5; /* LinkedIn blue */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #005e8c; /* Darker blue for hover */
+    text-decoration: underline;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 90%; /* Increase width on small screens */
+    }
+
+    h1 {
+        font-size: 1.6rem; /* Slightly smaller on mobile */
+    }
+
+    h2, h3 {
+        font-size: 1.2rem; /* Adjust size for subheadings */
+    }
+
+    p {
+        font-size: 0.85rem; /* Slightly smaller text on mobile */
+    }
+}
